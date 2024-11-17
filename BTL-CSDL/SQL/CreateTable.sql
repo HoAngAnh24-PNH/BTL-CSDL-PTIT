@@ -35,7 +35,7 @@ CREATE TABLE HuanLuyenVien(
 GO
 -- Tạo bảng Giải đấu
 CREATE TABLE GiaiDau(
-	TenGiai NVARCHAR(30),
+	TenGiai NVARCHAR(100),
 	MuaGiai CHAR(10),
 	TheThucThiDau NVARCHAR(30),
 	BanToChuc NVARCHAR(30),
@@ -52,7 +52,7 @@ CREATE TABLE NhaTaiTro (
 GO
 -- Tạo bảng Tài trợ
 CREATE TABLE TaiTro (
-	TenGiai NVARCHAR(30),
+	TenGiai NVARCHAR(100),
 	MuaGiai CHAR(10),
     	MaNhaTaiTro CHAR(10),
     	BatDau DATE,
@@ -67,7 +67,7 @@ CREATE TABLE TranDau(
 	MaTran CHAR(15),
 	SanDau NVARCHAR(50),
 	Thoigian DATE,
-	TenGiaiThuoc NVARCHAR(30),
+	TenGiaiThuoc NVARCHAR(100),
 	MuaGiaiThuoc CHAR(10),
 	PRIMARY KEY (MaTran),
 	FOREIGN KEY (TenGiaiThuoc,MuaGiaiThuoc) REFERENCES GiaiDau(TenGiai,MuaGiai)
