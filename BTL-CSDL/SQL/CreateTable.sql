@@ -17,7 +17,7 @@ CREATE TABLE CauThu(
 	TenDoiDoiTruong NVARCHAR(40),
 	SoAoDoiTruong INT,
 	PRIMARY KEY (TenDoi,SoAo),
-	FOREIGN KEY (TenDoi) REFERENCES DoiBong(TenDoi),
+	FOREIGN KEY (TenDoi) REFERENCES DoiBong(TenDoi)
 )
 
 GO
